@@ -1,0 +1,23 @@
+.body{
+    background-color: aquamarine;
+    height: 100vh;
+    
+}
+.courses{
+    display: flex;
+    justify-content: center;
+}
+.course-list{
+    list-style-type: none;
+}
+
+.list{
+    width: 500px;
+    display: flex;
+   align-items: center;
+    justify-content: space-around;
+}
+
+.add-course-button{
+    margin-left: -3px;
+}
