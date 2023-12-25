@@ -1,23 +1,25 @@
-.body{
+.body {
     background-color: aquamarine;
     height: 100vh;
-    
+
 }
-.courses{
+
+.courses {
     display: flex;
     justify-content: center;
 }
-.course-list{
+
+.course-list {
     list-style-type: none;
 }
 
-.list{
+.list {
     width: 500px;
     display: flex;
-   align-items: center;
+    align-items: center;
     justify-content: space-around;
 }
 
-.add-course-button{
+.add-course-button {
     margin-left: -3px;
 }

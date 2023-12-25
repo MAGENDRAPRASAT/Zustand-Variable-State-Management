@@ -3,6 +3,7 @@ import { create } from 'zustand'
 const useStore = create((set) => ({
     courses: [],
     addCourse: (course) => set((state) => ({ courses: [course, ...state.courses] })),
+
     changeStatus: (id) => set((state) => ({
         courses: state.courses.map((course) => {
             if (course.courseId === id) {
@@ -11,6 +12,8 @@ const useStore = create((set) => ({
             return course
         })
     })),
+    
+
     deleteCourse: (id) => set((state) => ({
         courses: state.courses.filter((course) => {
             if (course.courseId != id) {
@@ -19,11 +22,11 @@ const useStore = create((set) => ({
             }
         })
     })),
-    updateCourse:(id,newName)=>set((state)=>({
-        courses:state.courses.map((course)=>{
-            if(course.courseId===id){
+    updateCourse: (id, newName) => set((state) => ({
+        courses: state.courses.map((course) => {
+            if (course.courseId === id) {
                 console.log(course);
-                return {...course,courseName:newName}
+                return { ...course, courseName: newName }
             }
             return course
         })
